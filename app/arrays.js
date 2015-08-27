@@ -3,10 +3,19 @@ exports = (typeof window === 'undefined') ? global : window;
 exports.arraysAnswers = {
 
   indexOf : function(arr, item) {
-
+    return arr.indexOf(item);
+    //Jquery Method:
+    // if ($.inArray("item", arr) != -1){
+    //   return;
+    // }
   },
 
   sum : function(arr) {
+    //arr.reduce(callback[, initialValue])
+    return arr.reduce(function(a,b){
+      return a + b ;
+    }
+  );
 
   },
 
