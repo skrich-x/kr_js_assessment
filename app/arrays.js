@@ -51,15 +51,18 @@ Find and remove item from an array
   },
 
   append : function(arr, item) {
-
+    arr.push(item);
+    return arr;
   },
 
   truncate : function(arr) {
-
+    arr.pop();
+    return arr;
   },
 
   prepend : function(arr, item) {
-
+    arr.unshift(item);
+    return arr;
   },
 
   curtail : function(arr) {
