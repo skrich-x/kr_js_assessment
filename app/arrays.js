@@ -90,8 +90,7 @@ Find and remove item from an array
 
 
   duplicates : function(arr) {
-    _.unique(arr);
-    return(arr);
+    
   },
 
   square : function(arr) {
