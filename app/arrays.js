@@ -79,12 +79,19 @@ Find and remove item from an array
     return arr;
   },
 
+///Review This for cleaner or clearer Syntax//
   count : function(arr, item) {
-
+    var count = 0;
+    arr.forEach(function(i){
+      i === item ? count++ : false;
+    });
+    return count;
   },
 
-  duplicates : function(arr) {
 
+  duplicates : function(arr) {
+    _.unique(arr);
+    return(arr);
   },
 
   square : function(arr) {
