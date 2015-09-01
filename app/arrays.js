@@ -90,7 +90,20 @@ Find and remove item from an array
 
 
   duplicates : function(arr) {
-    
+    var count = 0;
+    var duplicates = [];
+    arr.forEach(function(item){
+      arr.reduce(function(a,b){
+        if (b === item) {
+          count += 1;
+        }
+      }, 0);
+      if ( count > 1 && duplicates.indexOf(item) === -1) {
+        duplicates.push(item);
+      }
+            count = 0;
+    });
+    return duplicates;
   },
 
   square : function(arr) {
