@@ -6,11 +6,13 @@ exports.functionsAnswers = {
   },
 
   speak : function(fn, obj) {
-
+    return fn.call(obj);
   },
 
   functionFunction : function(str) {
-
+    return function (arg) {
+      return str += ', ' + arg;
+    };
   },
 
   makeClosures : function(arr, fn) {
