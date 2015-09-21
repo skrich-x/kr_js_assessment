@@ -111,13 +111,6 @@ Find and remove item from an array
       return item*item;
     });
   },
-  // function getAllIndexes(arr, val) {
-  //     var indexes = [], i;
-  //     for(i = 0; i < arr.length; i++)
-  //         if (arr[i] === val)
-  //             indexes.push(i);
-  //     return indexes;
-  // }
 
   findAllOccurrences : function(arr, target) {
     var indexes = [], i;
