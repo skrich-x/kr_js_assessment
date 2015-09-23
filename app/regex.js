@@ -6,8 +6,9 @@ exports.regexAnswers = {
     return(/\d/).test(str);
   },
 
+  //regex to test if string contains repeating letter
   containsRepeatingLetter : function(str) {
-
+    return (/([A-Za-z])\1/).test(str);
   },
 
   endsWithVowel : function(str) {
